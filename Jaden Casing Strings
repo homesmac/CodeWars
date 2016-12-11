@@ -1,0 +1,7 @@
+def toJadenCase(string):
+    newwords = []
+    for i in string.split():
+    	newwords.append(i[0].upper()+i[1:])
+    joined = " ".join(newwords)
+    return joined
+        
