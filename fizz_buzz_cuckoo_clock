@@ -1,0 +1,21 @@
+def fizz_buzz_cuckoo_clock(time):
+    # your code here
+    if time == '00:00':
+        return ('Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo Cuckoo')
+    elif int(time[3:5])%3 == 0 and int(time[3:5])%5 == 0 and time[3:5] == '00' and time != '00:00':
+        if int(time[0:2]) > 12:
+            result = 'Cuckoo ' * (int(time[0:2])-12)
+            return (result[:-1])
+        else:
+            result = ('Cuckoo '*int(time[0:2]))
+            return (result[:-1])
+    elif int(time[3:5])%3 == 0 and int(time[3:5])%5 == 0 and time[3:5] == '30':
+        return ('Cuckoo')
+    elif int(time[3:5])%3 == 0 and int(time[3:5])%5 == 0:
+        return ('Fizz Buzz')
+    elif int(time[3:5])%3 == 0:
+        return ('Fizz')
+    elif int(time[3:5])%5 == 0:
+        return ('Buzz') 
+    else:
+        return ('tick')
