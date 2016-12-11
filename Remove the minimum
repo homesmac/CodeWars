@@ -1,0 +1,9 @@
+def remove_smallest(numbers):
+    # raise NotImplementedError("TODO: remove_smallest")
+    removal = map(int,numbers)
+    try:
+        numbers.remove(min(removal))
+        return numbers
+    except:
+        return []
+
