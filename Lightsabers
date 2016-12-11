@@ -1,0 +1,6 @@
+def tellmeyourname(Name=''):
+	# Name = raw_input('What is your name?')
+	if Name == 'Zach':
+		return 18
+	else:
+		return 0
