@@ -1,0 +1,9 @@
+def Descending_Order(num):
+    #Bust a move right here
+    if len(str(num)) > 1:
+    	newlist = sorted(str(num), reverse = True)
+    	joined = "".join(newlist)
+    	return int(joined)
+    else:
+        return int(num)
+    
