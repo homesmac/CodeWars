@@ -1,0 +1,17 @@
+def longest(s1, s2):
+    # your code
+    uniqueletters = []
+    for i in s1:
+        if i not in uniqueletters:
+            uniqueletters.append(i)
+        else:
+            pass
+    for i in s2:
+        if i not in uniqueletters:
+            uniqueletters.append(i)
+        else:
+            pass
+    mystring = "".join(sorted(uniqueletters))
+    print mystring
+
+longest('test','case')
