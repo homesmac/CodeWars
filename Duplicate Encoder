@@ -1,0 +1,9 @@
+def duplicate_encode(word):
+	newword = []
+	for i in word:
+		if word.count(i.lower()) > 1:
+			newword.append(')')
+		else:
+			newword.append('(')
+	joined = "".join(newword)
+	return joined
