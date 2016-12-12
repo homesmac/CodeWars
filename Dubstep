@@ -1,0 +1,5 @@
+import re
+def song_decoder(song):
+	newsong = re.sub('WUB',' ', song)
+	newsongclean = re.split('\s+',newsong.strip())
+	return ' '.join(newsongclean)
