@@ -1,0 +1,8 @@
+def tribonacci(signature,n):
+	newlist = []
+	for i in signature:
+		newlist.append(i)
+	while len(newlist) < n:
+		newlist.append(sum(newlist[-3:]))
+	return newlist[:n]
+
