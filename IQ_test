@@ -1,0 +1,14 @@
+def iq_test(numbers):
+  cleanlist = numbers.split()
+  sum = 0
+  for i in cleanlist:
+    sum += (int(i)%2)
+  if sum == 1:
+    for i in cleanlist:
+      if int(i)%2 == 1:
+        return cleanlist.index(i)+1
+  else:
+    for i in cleanlist:
+      if int(i)%2 == 0:
+        return cleanlist.index(i)+1
+
