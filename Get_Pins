@@ -22,7 +22,7 @@ def positioning(combo, counter, pos):
         output = ["".join(tup) for tup in out]
         return (output)
     else:
-        positioning(out, counter, pos)
+        return positioning(out, counter, pos)
 
 if __name__ == '__main__':
     get_pins('369')
